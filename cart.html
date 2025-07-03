@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - KINANA</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="icon.png" type="image/png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+ 
+        
+        <div class="main-header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo">
+                        <a href="index.html"><h1>KINANA</h1></a>
+                    </div>
+                    
+                    <nav class="main-nav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="shop.html">Shop</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="cart.html" class="active">Cart</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <!-- <li><a href="shop.html#laptops">Laptops</a></li>
+                            <li><a href="shop.html#monitors">Monitors</a></li>
+                            <li><a href="shop.html#gaming-products">Gaming Products</a></li> -->
+                        </ul>
+                    </nav>
+                    
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search for products...">
+                        <button class="search-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                    
+                    <div class="header-actions">
+                        <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+                        <!-- <div class="cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                            <span class="cart-text">MAD0</span>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Your Shopping Cart</h1>
+            <p>Review your selected items before checkout.</p>
+        </div>
+    </section>
+
+    <main class="main-content cart-page">
+        <div class="container">
+            <div class="cart-items-container">
+                <!-- Cart items will be loaded here by JavaScript -->
+                <p class="empty-cart-message">Your cart is empty. Start shopping now!</p>
+            </div>
+            
+            <div class="cart-summary">
+                <h2>Cart Summary</h2>
+                <div class="summary-row">
+                    <span>Subtotal:</span>
+                    <span id="cart-subtotal">MAD0</span>
+                </div>
+                <div class="summary-row">
+                    <span>Shipping:</span>
+                    <span id="cart-shipping">MAD0</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Total:</span>
+                    <span id="cart-total">MAD0</span>
+                </div>
+                <button class="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Information</h3>
+                    <ul>
+                        <li><a href="warranty-policy.html">Warranty Policy</a></li>
+                        <li><a href="shipping-policy.html">Shipping Policy</a></li>
+                        <li><a href="payment-methods.html">Payment Methods</a></li>
+                        <li><a href="help-center.html">Help Center</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                    </ul>
+                </div>
+                
+                <!-- <div class="footer-section">
+                    <h3>My Account</h3>
+                    <ul>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">My Orders</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                    </ul>
+                </div> -->
+                
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <form class="contact-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="text" placeholder="Company">
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Message" required></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025, KINANA, All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
+
